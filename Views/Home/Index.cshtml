@@ -1,0 +1,38 @@
+﻿<html>
+<head>
+    <title>Gold Rate page</title>
+</head>
+<body bgcolor="yellow">
+    <h1>Hello...Welcome to Goldy!!!</h1>
+    @{
+        Gold.GetHtmlAsync();
+    }
+    @{
+        Gold.GetHtmlAsync2();
+    }
+    <br />
+
+    <h4>
+        Click on the Gold Price to get 22k and 24k Gold prices across 24 cities in India :
+        <a asp-area="" asp-controller="First" asp-action="Index">Gold price</a>
+    </h4>
+    <br />
+
+    <h4>
+        Click here to get lowest Price for 22k and 24k Gold :
+        <a asp-area="" asp-controller="First" asp-action="Small">Lowest price</a>
+    </h4>
+    <br />
+    <h4>
+        Click here to get highest Price for 22k and 24k Gold :
+        <a asp-area="" asp-controller="First" asp-action="Large">Highest price</a>
+    </h4>
+   <br />
+    <h4>
+        Click here to get Last 10 days Gold price in Bengaluru :
+        <a asp-area="" asp-controller="First" asp-action="Bangalore">Bengaluru</a>
+    </h4>
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Highest Gold prices";
+}
+
+<h2>City with highest Gold prices</h2>
+<br />
+<h3>
+    City having highest price for 22k Gold:
+    @Html.DisplayFor(modelItem => Gold.cityList[Gold.large22])
+    @Html.DisplayFor(modelItem => Gold.oneList[Gold.large22])
+</h3>
+<br />
+<br />
+<h3>
+    City having highest price for 24k Gold:
+    @Html.DisplayFor(modelItem => Gold.cityList[Gold.large24])
+    @Html.DisplayFor(modelItem => Gold.twoList[Gold.large24])
+</h3>
+

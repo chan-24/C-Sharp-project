@@ -1,0 +1,58 @@
+﻿<head>
+	
+	<script type="text/javascript">
+
+				window.onload = function () {
+				var chart = new CanvasJS.Chart("chartContainer", {
+					theme: "light2",
+			animationEnabled: true,
+					title: {
+					text: "Bangalore Gold price-Last 10 days"
+		},
+		subtitles: [
+						{text: "22k Gold" }
+		],
+                    axisY: {
+                        title: "Gold Price",
+                        minimum: 38000,
+						  interval: 500,
+				 prefix: "Rs."
+                    },
+                    axisX: {
+			title: "<-------------Last 10 days"
+	
+			},data: [
+					{
+					type: "line", //change type to bar, line, area, pie, etc
+                dataPoints: [
+						{x: 0, y: @Html.DisplayFor(modelItem => Gold.one1List[9])},
+						{x: 1, y: @Html.DisplayFor(modelItem => Gold.one1List[8])},
+						{x: 2, y: @Html.DisplayFor(modelItem => Gold.one1List[7])},
+						{x: 3, y: @Html.DisplayFor(modelItem => Gold.one1List[6])},
+						{x: 4, y: @Html.DisplayFor(modelItem => Gold.one1List[5])},
+						{x: 5, y: @Html.DisplayFor(modelItem => Gold.one1List[4])},
+						{x: 6, y: @Html.DisplayFor(modelItem => Gold.one1List[3])},
+						{x: 7, y: @Html.DisplayFor(modelItem => Gold.one1List[2])},
+						{x: 8, y: @Html.DisplayFor(modelItem => Gold.one1List[1])},
+						{x: 9, y: @Html.DisplayFor(modelItem => Gold.one1List[0])}
+						
+						
+
+
+						]
+					}
+				]
+		});
+		chart.render();
+	};
+	</script>
+	@{
+        Console.WriteLine("jadbadw");
+    }
+</head>
+<body>
+		<div id="chartContainer"></div>
+		<script src="https://canvasjs.com/assets/script/canvasjs.min.js">
+			</script>
+
+</body >

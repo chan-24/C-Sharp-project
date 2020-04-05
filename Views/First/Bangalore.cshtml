@@ -1,0 +1,147 @@
+﻿@{
+    ViewData["Title"] = "Bengaluru Gold prices";
+}
+
+<h2>Last 10 Days Gold prices in Bengaluru</h2>
+<h4>
+    <a asp-area="" asp-controller="First" asp-action="Analysis">Bengaluru last 10 days gold graph</a>
+</h4>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <h3>Date</h3>
+            </th>
+            <th>
+                <h3>22k Gold</h3>
+            </th>
+            <th>
+                <h3>24k Gold</h3>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.dateList[0])
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.one1List[0])
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.two1List[0])
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.dateList[1])
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.one1List[1])
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.two1List[1])
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.dateList[2])
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.one1List[2])
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.two1List[2])
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.dateList[3])
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.one1List[3])
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.two1List[3])
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.dateList[4])
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.one1List[4])
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.two1List[4])
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.dateList[5])
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.one1List[5])
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.two1List[5])
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.dateList[6])
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.one1List[6])
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.two1List[6])
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.dateList[7])
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.one1List[7])
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.two1List[7])
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.dateList[8])
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.one1List[8])
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.two1List[8])
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.dateList[9])
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.one1List[9])
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Gold.two1List[9])
+            </td>
+
+        </tr>
+        
+    </tbody>
+</table>
+<h6>Disclaimer:All prices are Indian Rupees</h6>
